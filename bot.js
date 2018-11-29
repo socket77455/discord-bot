@@ -15,13 +15,6 @@ bot.on('message', message => {
     if (message.content == "help") {
         message.reply("Please type !info");
     }
-    
-    var args = message.content.substring(PREFIX.length).split(" ");
-    switch (args[0]) {
-          case "info";
-             message.channel.sendMessage("test");
-             break; }
-         
 });
 
 bot.login(process.env.BOT_TOKEN);
