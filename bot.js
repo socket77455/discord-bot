@@ -10,6 +10,9 @@ bot.on('message', message => {
     if (message.content === 'ping') {
     	message.reply('pong');
   	}
+    if (message.content === 'hi') {
+        message.reply('hello');
+    }
 });
 
 bot.login(process.env.BOT_TOKEN);
