@@ -15,6 +15,8 @@ bot.on('message', message => {
     if (message.content == "help") {
         message.reply("Please type !info");
     }
+    
+    var args = message.content.substring(PREFIX.length).split(" ");
 });
 
 bot.login(process.env.BOT_TOKEN);
