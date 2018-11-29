@@ -1,7 +1,7 @@
 {
-  "name": "Test",
-  "description": "Test",
-  "version": "0.0.0",
+  "name": "Ultra-Host",
+  "description": "Official Discord bot of ultra-h.com",
+  "version": "0.0.1",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
