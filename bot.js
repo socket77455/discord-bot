@@ -28,9 +28,9 @@ bot.on('message', message => {
         message.reply("__•••**Available commands[3]**•••__ \n \n `!info` *>>* **Tells you about the bot.** \n `!cmds` *>>* **To check all the available commands.** \n `!mypic` *>>* **Check your profile picture.**");
     }
     if (message.content == "!mypic") {
-        var member= message.mentions.members.first();
+        var user= message.mentions.users.first();
         let embed = new Discord.RichEmbed()
-        .setImage(message.member.avatarURL)
+        .setImage(message.user.avatarURL)
         .setColor('#275BF0')
         message.channel.send(embed)
     }
