@@ -9,13 +9,13 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
     if (message.author.equals(bot.user)) return;
-    if (!message.content.startswith(PREFIX)) return;
     if (message.content == 'hi') {
         message.reply('hello');
     }
     if (message.content == "help") {
         message.reply("Please type !info");
     }
+    if (!message.content.startswith(PREFIX)) return;
 });
 
 bot.login(process.env.BOT_TOKEN);
