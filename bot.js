@@ -20,8 +20,7 @@ bot.on('message', message => {
     switch (args[0]) {
           case "info";
              message.channel.sendMessage("test");
-             break;
-           
+             break; }
          
 });
 
