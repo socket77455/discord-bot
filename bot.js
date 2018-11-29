@@ -10,7 +10,7 @@ bot.on('ready', () => {
 bot.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(ch => ch.name === 'general');
   if (!channel) return;
-  channel.send("Welcome to the server, ${user}");
+  channel.send(`Welcome to the server, ${member}`);
 });
 
 bot.on('message', message => {
