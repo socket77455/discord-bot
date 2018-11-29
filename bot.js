@@ -7,6 +7,12 @@ bot.on('ready', () => {
     bot.user.setPresence({game: { name: "ultra-h.com | !info", type: 0 }});
 });
 
+bot.on('guildMemberAdd', member => {
+  const channel = member.guild.channels.find(ch => ch.name === 'general');
+  if (!channel) return;
+  channel.send("Welcome to the server, ${member}");
+});
+
 bot.on('message', message => {
     if (message.author.equals(bot.user)) return;
     if (message.content == 'hi') {
