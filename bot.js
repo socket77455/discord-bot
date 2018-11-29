@@ -7,10 +7,11 @@ bot.on('ready', () => {
 });
 
 bot.on('message', message => {
-    if (message.content === 'hi') {
+    if (message.author.equals(bot.user)) return;
+    if (message.content == 'hi') {
         message.reply('hello');
     }
-    if (message.content === "help") {
+    if (message.content == "help") {
         message.reply("Please type ?info");
     }
 });
