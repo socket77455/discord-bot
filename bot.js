@@ -27,13 +27,24 @@ bot.on('message', message => {
     if (message.content == "!cmds") {
         message.reply("__•••**Available commands[3]**•••__ \n \n `!info` *>>* **Tells you about the bot.** \n `!cmds` *>>* **To check all the available commands.** \n `!mypic` *>>* **Check your profile picture.**");
     }
-    if (message.content === "!test") {
-        var user= message.mentions.users.first();
-        let embed = new Discord.RichEmbed()
-        .setImage(message.user.avatarURL)
-        .setColor('#275BF0')
-        message.channel.send(embed)
+    var message = '';
+    if (m.content.startsWith("!avy")) {
+    if (m.content.indexOf(' ') !== -1) {
+        if (m.mentions) {
+            for (var user of m.mentions) {
+                message += user.avatarURL + '\n';
+            }
+            message.slice(0, -2);
+            bot.sendMessage(m.channel, message);
+        } else {
+            message = m.author.avatarURL;
+            bot.sendMessage(m.channel, message);
+        }
+    } else {
+        message = m.author.avatarURL;
+        bot.sendMessage(m.channel, message);
     }
+}
 });
 
 bot.login(process.env.BOT_TOKEN);
