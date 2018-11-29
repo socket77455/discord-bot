@@ -10,7 +10,7 @@ bot.on('ready', () => {
 bot.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(ch => ch.name === 'general');
   if (!channel) return;
-  channel.send(`Hey ${member}! Welcome to the official ultra host discord server. Do not forget to read the channel topics!`);
+  channel.send(`Hey ${member}! Welcome to the official ultra host discord server. Do not forget to read the channel topics! <#517642904701894686>`);
 });
 
 bot.on('message', message => {
