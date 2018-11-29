@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setPresence({game: { name: "ultra-h.com | ?info", type: 0 }});
+    bot.user.setPresence({game: { name: "ultra-h.com | !info", type: 0 }});
 });
 
 bot.on('message', message => {
@@ -12,7 +12,7 @@ bot.on('message', message => {
         message.reply('hello');
     }
     if (message.content == "help") {
-        message.reply("Please type ?info");
+        message.reply("Please type !info");
     }
 });
 
