@@ -16,7 +16,7 @@ bot.on('message', message => {
         message.reply("Please type !info");
     }
     if (message.content == "!info") {
-        message.reply("Hello! I am the official Discord bot of Ultra Host created by Socket#7043. I am currently in development, more features will be added in near future. *Do not forget to visit my home :smile: at https://ultra-h.com*");
+        message.reply("Hello! I am the official Discord bot of **Ultra Host** created by Socket#7043. I am currently in development, more features will be added in near future. **Do not forget to visit my home :smile: at https://ultra-h.com**");
     }
 });
 
