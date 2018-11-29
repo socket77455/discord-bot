@@ -21,6 +21,7 @@ bot.on('message', message => {
           case "info";
              message.channel.sendMessage("test");
              break;
+           
          
 });
 
