@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setGame('ultra-h.com | ?info');
+    bot.user.setGame("ultra-h.com | ?info");
 });
 
 bot.on('message', message => {
@@ -12,6 +12,9 @@ bot.on('message', message => {
   	}
     if (message.content === 'hi') {
         message.reply('hello');
+    }
+    if (message.content === "help") {
+        message.reply("Please type ?help");
     }
 });
 
