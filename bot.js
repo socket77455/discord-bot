@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const PREFIX = "!";
 
 bot.on('ready', () => {
     console.log('I am ready!');
@@ -8,6 +9,7 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
     if (message.author.equals(bot.user)) return;
+    if (!message.content.startswith(PREFIX)) return;
     if (message.content == 'hi') {
         message.reply('hello');
     }
