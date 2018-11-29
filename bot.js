@@ -8,7 +8,7 @@ bot.on('ready', () => {
 });
 
 bot.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find(ch => ch.name === 'general');
+  const channel = member.guild.channels.find(ch => ch.name === '👋welcome');
   if (!channel) return;
   channel.send(`Hey ${member}! Welcome to the official ultra host discord server. Do not forget to read the channel topics! You may ask for help in <#489467701648031754> or introduce and talk with other members in <#489465446366707725> Channel. Enjoy your stay 😊😊😊`);
 });
