@@ -7,14 +7,11 @@ bot.on('ready', () => {
 });
 
 bot.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
     if (message.content === 'hi') {
         message.reply('hello');
     }
     if (message.content === "help") {
-        message.reply("Please type ?help");
+        message.reply("Please type ?info");
     }
 });
 
