@@ -15,7 +15,6 @@ bot.on('message', message => {
     if (message.content == "help") {
         message.reply("Please type !info");
     }
-    if (!message.content.startswith(PREFIX)) return;
 });
 
 bot.login(process.env.BOT_TOKEN);
