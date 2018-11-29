@@ -25,7 +25,7 @@ bot.on('message', message => {
         message.reply("Hello! I am the official Discord bot of **Ultra Host** created by Socket#7043. Type `!cmds` to access currently available commanda. I am currently in development, more features will be added in near future. **Do not forget to visit my home :smile: at** https://ultra-h.com");
     }
     if (message.content == "!cmds") {
-        message.reply("__•••**Available commands[2]**•••__ \n `!info` *>>* **Tells you about the bot.** \n `cmds` *>>* **To check all the available commands.** \n `!myavatar` *>>* **Shows your avatar to others.**");
+        message.reply("__•••**Available commands[3]**•••__ \n \n `!info` *>>* **Tells you about the bot.** \n `!cmds` *>>* **To check all the available commands.** \n `!myavatar` *>>* **Shows your avatar to others.**");
     }
 });
 
