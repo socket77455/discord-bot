@@ -27,7 +27,7 @@ bot.on('message', message => {
     if (message.content == "!cmds") {
         message.reply("__•••**Available commands[3]**•••__ \n \n `!info` *>>* **Tells you about the bot.** \n `!cmds` *>>* **To check all the available commands.** \n `!mypic` *>>* **Check your profile picture.**");
     }
-    if (message.content === 'avatar') {
+    if (message.content == 'avatar') {
         let user = message.mentions.users.first() || message.author;
         let embed = new Discord.RichEmbed()
         .setAuthor(`${user.username}`)
