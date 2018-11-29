@@ -27,7 +27,7 @@ bot.on('message', message => {
     if (message.content == "!cmds") {
         message.reply("__•••**Available commands[3]**•••__ \n \n `!info` *>>* **Tells you about the bot.** \n `!cmds` *>>* **To check all the available commands.** \n `!mypic` *>>* **Check your profile picture.**");
     }
-    if (message.content == "!mypic") {
+    if (message.content === "!test") {
         var user= message.mentions.users.first();
         let embed = new Discord.RichEmbed()
         .setImage(message.user.avatarURL)
